@@ -1,0 +1,375 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* ------header section start---------- */
+
+.top-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #072F54;
+    border-radius: 25px;
+    width: 1050px;
+    height: 596px;
+    margin: 50px 140px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.medium-text {
+    color: antiquewhite;
+}
+
+.text-part,
+.player-image {
+    width: 50%;
+}
+
+.player-image img {
+    position: absolute;
+    width: 46.3%;
+    padding-top: 82px;
+
+}
+
+.button-top {
+    text-decoration: none;
+    background-color: red;
+    color: aliceblue;
+    font-size: 1.2em;
+    padding: 10px 35px;
+    border-radius: 5px;
+}
+
+.text-part {
+    padding: 55px 0 40px 80px;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #8FD974;
+    border-radius: 25px;
+    position: relative;
+    transition: transform 0.8s ease-out;
+
+}
+
+.ball-move {
+    width: 200px;
+}
+
+.ball-move:hover>.ball {
+    transform: translate(150px);
+}
+
+
+
+/* ------header section ends---------- */
+
+/* -----------side-nav section starts------- */
+
+.blog {
+    display: flex;
+    margin: 10% 0;
+    justify-content: center;
+
+
+}
+
+.side-nav {
+
+    width: 300px;
+    background-color: #072854;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    height: 280px;
+    align-content: space-evenly;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.side-nav>a {
+    text-decoration: none;
+    background-color: #007D98;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 0 20px;
+
+}
+
+#current-nav {
+    background-color: red;
+}
+
+/* -------side-nav section ends-------- */
+
+/* ---------transfer section starts------- */
+
+
+.transfer-design {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+
+}
+
+.transfer-news {
+    width: 220px;
+    height: 300px;
+    border: 1px solid rgba(119, 136, 153, 0.267);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 0 7px;
+}
+
+.transfer-image {
+    margin-bottom: 15px;
+
+}
+
+.transfer-image img {
+    width: 100%;
+}
+
+.button-transfer {
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    padding: 3px 20px;
+}
+
+.fa-clock {
+    font-size: 1.5;
+}
+
+span {
+    margin-left: 20%;
+}
+
+/* ---------transfer section ends-------- */
+
+/* ---------hidden button start---------- */
+#hidden-button {
+    display: none;
+}
+
+/* ----------hidden button ends---------- */
+
+/* ---------footer section start ----------*/
+footer {
+    height: 400px;
+    background-color: #072F54;
+    color: aliceblue;
+    text-align: center;
+    padding: 0 10%;
+    padding-bottom: 3%;
+
+}
+
+footer>h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: 12%;
+}
+
+footer>hr {
+    border: 1px solid gray;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.footer-para {
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+
+    color: white;
+    font-size: 2rem;
+    padding: 5% 2%;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+    color: red;
+}
+
+/* --------footer section ends ---------- */
+
+/* ------media queris--------- */
+
+/* --------tablet view start--------- */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .top-banner {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    .text-part {
+        margin: 0;
+
+    }
+
+    .medium-text {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .player-image img {
+        width: 30%;
+        height: 75%;
+        padding-left: 10%;
+    }
+
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .transfer-design {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+    }
+
+    .side-nav {
+        display: flex;
+        width: 100%;
+        height: 0%;
+        justify-content: center;
+    }
+
+    .side-nav>a {
+        padding: 2% 5%;
+    }
+
+    .transfer-news {
+        width: 90%;
+        height: 50%;
+        padding: 5px 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #hidden-button {
+        display: block;
+        margin-left: 42%;
+        margin-bottom: 12%;
+    }
+
+    .footer-para {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* ---------tablet view ends---------- */
+
+/* ---------mobile view starts----------- */
+
+
+@media screen and (max-width:767px) {
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    h1 {
+        text-align: center;
+        margin-left: -15vh;
+        font-size: 2.0rem;
+    }
+
+    .medium-text {
+        text-align: center;
+        margin-left: -15vh;
+        font-size: 0.8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .transfer-design {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .side-nav {
+        width: 100%;
+    }
+
+    .transfer-news {
+        width: 100%;
+        height: 50%;
+    }
+
+    .footer-para {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        padding-bottom: 12vh;
+
+    }
+
+    footer>h2 {
+        padding-top: 2%;
+    }
+
+    footer>hr {
+        margin: 0;
+    }
+
+    .footer-icon {
+        padding-bottom: 0;
+    }
+}
+
+/* ---------mobile view ends---------- */
+
+/* ------media queries ends------- */
