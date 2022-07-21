@@ -246,6 +246,11 @@ footer>hr {
     .transfer-design {
         width: 100vh;
     }
+
+    footer {
+        width: 110vh;
+
+    }
 }
 
 /* ----------Desktop view ends----------- */
